@@ -108,10 +108,6 @@ Flask Dashboard (Live Monitoring)
 pip install flask paho-mqtt cryptography
 python3 server.py
 
-##At last
 
-Open Dashboard
-http://localhost:5000
 
-## 📁 Project Structure
 
