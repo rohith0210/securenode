@@ -1,6 +1,9 @@
 # 🔐 Secure IoT Node with Hardware-Based Trust (ESP32 + ATECC)
 
+##PLEASE INGORE ALL COMMENTED CODE IT IS FOR DEBUG IN A STEPS HOPE UNDERSTOOD!
 🚀 A prototype of a **Secure IoT Architecture** implementing device identity, secure communication, data integrity, and tamper detection.
+
+
 
 ---
 
