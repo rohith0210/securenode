@@ -20,3 +20,98 @@ This project demonstrates how to build a **secure IoT system** using:
 ---
 
 ## 🧠 Architecture
+ESP32 + ATECC
+↓ (TLS + MQTT)
+Secure Broker
+↓
+Python Backend (Verification Engine)
+↓
+Flask Dashboard (Live Monitoring)
+
+---
+
+## 🔐 Security Features
+
+✔ Hardware-based device identity (ATECC)  
+✔ TLS encrypted communication  
+✔ ECC digital signature verification  
+✔ Replay attack detection  
+✔ Sensor tamper detection  
+✔ Device offline detection  
+
+---
+
+## 🚨 Tamper Detection Logic
+
+- ❌ Unknown device → Rejected  
+- ❌ Invalid signature → Rejected  
+- ❌ Replay attack → Rejected  
+- ❌ Abnormal sensor values → Rejected  
+- ❌ Device offline → Alert  
+
+---
+
+## 📊 Dashboard Features
+
+- Real-time temperature & humidity  
+- Separate charts for visualization  
+- Device status (online/offline)  
+- Attack detection counter  
+- Live system stats  
+
+---
+
+## ⚙️ Technologies Used
+
+### Embedded
+- ESP32 (Arduino IDE)
+- ATECC608A (Secure Element)
+- DHT11 Sensor
+
+### Communication
+- MQTT (broker.hivemq.com)
+- TLS (port 8883)
+
+### Backend
+- Python
+- Flask
+- Paho MQTT
+- Cryptography (ECC verification)
+
+---
+## 📁 Project Structure
+📦 Secure-IoT
+┣ 📜 securenode_draft.ino # ESP32 firmware
+┣ 📜 server.py # Backend verification + dashboard
+┣ 📁 templates/
+┃ ┗ 📜 index.html # Dashboard UI
+┣ 📜 README.md
+
+---
+
+## 🚀 How to Run
+
+### 1️⃣ ESP32 Setup
+- Open `securenode_draft.ino` in Arduino IDE  
+- Install required libraries:
+  - WiFi
+  - PubSubClient
+  - ArduinoECCX08
+  - DHT  
+- Upload to ESP32  
+
+---
+
+### 2️⃣ Backend Setup
+
+```bash
+pip install flask paho-mqtt cryptography
+python3 server.py
+
+##At last
+
+Open Dashboard
+http://localhost:5000
+
+## 📁 Project Structure
+
