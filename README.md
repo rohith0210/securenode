@@ -103,10 +103,13 @@ Flask Dashboard (Live Monitoring)
 ---
 
 ### 2️⃣ Backend Setup
-
-```bash
 pip install flask paho-mqtt cryptography
 python3 server.py
+
+---
+
+### 3️⃣ Open Dashboard
+http://localhost:5000
 
 
 
