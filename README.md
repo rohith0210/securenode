@@ -87,6 +87,7 @@ Flask Dashboard (Live Monitoring)
 ┃ ┗ 📜 index.html # Dashboard UI
 ┣ 📜 README.md
 
+Actually this is my project structure but here i didnt include all!PLEASE IGNORE!:)
 ---
 
 ## 🚀 How to Run
