@@ -21,11 +21,14 @@ This project demonstrates how to build a **secure IoT system** using:
 
 ## 🧠 Architecture
 ESP32 + ATECC
-↓ (TLS + MQTT)
+ (TLS + MQTT)
+ 
 Secure Broker
-↓
+
+
 Python Backend (Verification Engine)
-↓
+
+
 Flask Dashboard (Live Monitoring)
 
 ---
